@@ -1,32 +1,66 @@
-:root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-}
-
+/* Base styles */
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: 'Poppins', sans-serif;
-  transition: all 0.3s ease;
   margin: 0;
-}
-
-/* Dark mode theme */
-body.dark-mode {
-  --bg-color: #121212;
-  --text-color: #f5f5f5;
-}
-
-header, nav, section, footer {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-body.dark-mode header,
-body.dark-mode nav,
-body.dark-mode section,
-body.dark-mode footer {
-  background-color: #1e1e1e;
-  color: var(--text-color);
+header {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
 }
 
-/* You can include your other styles from the existing inline CSS here */
+nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+}
+
+section {
+  padding: 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.dark-mode nav a {
+  color: #ddd;
+}
+
+/* Button */
+button#toggle-dark {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  z-index: 1000;
+}
+
+.dark-mode button#toggle-dark {
+  background-color: #eee;
+  color: #121212;
+}
