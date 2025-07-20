@@ -71,4 +71,12 @@ I’m building a personal responsive portfolio step-by-step.
 ## 📌 Goals:
 - Learn modern frontend web development
 - Build real projects
-- Crack 15+ LPA job 💪
+
+### ✅ Sections Completed
+- Navbar
+- Hero
+- About
+- Projects
+- Contact
+- Footer
+
