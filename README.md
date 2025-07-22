@@ -18,3 +18,5 @@ Features include:
 - HTML
 - CSS
 - JavaScript
+
+✅ Day 6: Made portfolio fully responsive using CSS media queries
