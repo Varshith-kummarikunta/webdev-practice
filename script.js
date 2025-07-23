@@ -44,3 +44,10 @@ form.addEventListener("submit", function (e) {
     form.reset(); // clear form
   }
 });
+
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
