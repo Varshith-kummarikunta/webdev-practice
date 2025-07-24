@@ -53,24 +53,26 @@
   <!-- Contact Section -->
   <section id="contact">
     <h2>Contact Me</h2>
-    <p>Email: varshith@example.com</p>
+    <p>Email: varshithkummarikunta@gmail.com</p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/varshith-kummarikunta-067253328/" target="_blank">My Profile</a></p>
   </section>
 
   <form id="contact-form">
   <label>Name</label>
-  <input type="text" id="name" />
-  <div class="error" id="name-error"></div>
+  <input type="text" id="name" placeholder="Your Name" />
+  <span class="error" id="name-error"></span>
 
   <label>Email</label>
-  <input type="email" id="email" />
-  <div class="error" id="email-error"></div>
+  <input type="email" id="email" placeholder="you@example.com" />
+  <span class="error" id="email-error"></span>
 
   <label>Message</label>
-  <textarea id="message"></textarea>
-  <div class="error" id="message-error"></div>
+  <textarea id="message" placeholder="Your message"></textarea>
+  <span class="error" id="message-error"></span>
 
-  <button type="submit">Send</button>
+  <button type="submit" id="submit-btn" disabled>Send</button>
+</form>
+
   
   <!-- Footer -->
   <footer>

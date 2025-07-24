@@ -51,3 +51,52 @@ const navLinks = document.getElementById('navLinks');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('show');
 });
+
+const nameInput = document.getElementById('name');
+const emailInput = document.getElementById('email');
+const messageInput = document.getElementById('message');
+const submitBtn = document.getElementById('submit-btn');
+
+const nameError = document.getElementById('name-error');
+const emailError = document.getElementById('email-error');
+const messageError = document.getElementById('message-error');
+
+function validateName() {
+  if (nameInput.value.trim() === "") {
+    nameError.textContent = "Name is required";
+    return false;
+  }
+  nameError.textContent = "";
+  return true;
+}
+
+function validateEmail() {
+  const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!regex.test(emailInput.value)) {
+    emailError.textContent = "Enter a valid email";
+    return false;
+  }
+  emailError.textContent = "";
+  return true;
+}
+
+function validateMessage() {
+  if (messageInput.value.trim() === "") {
+    messageError.textContent = "Message cannot be empty";
+    return false;
+  }
+  messageError.textContent = "";
+  return true;
+}
+
+function validateForm() {
+  const isNameValid = validateName();
+  const isEmailValid = validateEmail();
+  const isMessageValid = validateMessage();
+
+  submitBtn.disabled = !(isNameValid && isEmailValid && isMessageValid);
+}
+
+nameInput.addEventListener('input', validateForm);
+emailInput.addEventListener('input', validateForm);
+messageInput.addEventListener('input', validateForm);
