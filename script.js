@@ -100,3 +100,10 @@ function validateForm() {
 nameInput.addEventListener('input', validateForm);
 emailInput.addEventListener('input', validateForm);
 messageInput.addEventListener('input', validateForm);
+
+const hamburger = document.getElementById('hamburger');
+const mobileNav = document.getElementById('mobile-nav');
+
+hamburger.addEventListener('click', () => {
+  mobileNav.classList.toggle('show');
+});

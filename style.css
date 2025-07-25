@@ -174,3 +174,39 @@ button#toggle-dark {
 input:invalid, textarea:invalid {
   border-color: red;
 }
+
+/* Base Styles */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Mobile Nav Menu (Hidden by default) */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #222;
+  padding: 10px;
+}
+
+.mobile-nav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Show hamburger and mobile nav on small screens */
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .mobile-nav.show {
+    display: flex;
+  }
+}
