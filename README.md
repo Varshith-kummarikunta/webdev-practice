@@ -1,22 +1,36 @@
 # Varshith's Portfolio
 
-A personal portfolio built using HTML, CSS, and JavaScript.  
-Features include:
-- Clean UI layout
-- Hero, About, Projects, Contact, and Footer sections
-- Dark Mode toggle
-- Responsive and beginner-friendly code
+This is my personal portfolio website built using HTML, CSS, and JavaScript.  
+It features:
 
-## Goals
-✅ Learn Web Development basics  
-✅ Build portfolio structure  
-✅ Implement styling and dark mode  
-⬜ Add responsiveness  
-⬜ Deploy online
+- A responsive design with media queries
+- A dark mode toggle
+- A responsive navigation bar (with hamburger menu for mobile)
+- Scroll reveal animations for dynamic section effects
+- Real-time form validation in the contact form
 
-## Tech Used
-- HTML
-- CSS
+## Live Demo
+[https://varshith-kummarikunta.github.io/webdev-practice/]
+
+## Folder Structure
+
+webdev-practice/
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
+## Technologies Used
+
+- HTML5
+- CSS3
 - JavaScript
+- ScrollReveal.js
+- Git & GitHub
+- GitHub Pages for Deployment
 
-✅ Day 6: Made portfolio fully responsive using CSS media queries
+## Future Enhancements
+
+- Additional interactive animations
+- More portfolio projects
+- Improved form processing functionality
